@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visit Brazil</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+  font-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(27, 125, 48);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 3, 8);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: rgb(243, 244, 193);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f6f9f6;
+  height: 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Visit Brazil</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="welcome.html">Welcome</a></li>
+      <li><a href="index.html">History of Brazil</a></li>
+      <li><a href="tour.html">Touristic places</a></li>
+      <li><a href="review.html">Let us know what you think!</a></li>
+      <li><a href="reserv.html">Make a reservation</a></li>
+      <li><a href="carnival.html">Brazil Cranival</a></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+
+    <h1>Touristic places</h1>
+
+    <p>
+        Brasilia is the 3rd capital city of Brazil, following the cities of Salvador and Rio de Janeiro consecutively. The city was inaugurated in 1960 by president Juscelino Kubitschek. The new capital was an audacious project and became the symbol of urban planning and modern architecture in the 20th century. The idea of ​​building a new capital was to populate the center of the country and also to keep the capital away from possible attacks from foreign ships on the coast.
+        <br>
+        <br>
+
+        <img
+          src="images/0AEBCD63-8D21-4540-B877-72F14D2E193D.jpeg"
+          alt="Brasilia"
+          style="width: 500px; height: 375px; float: right; margin-right: 15px;"
+        />
+        Home to more than 3 million people, Brasílias basic design, called Pilot Plan (Plano Piloto), was conceived by urban planner Lúcio Costa and architect Oscar Niemeyer. The design resembles the shape of an airplane and has been added to Unesco’s World Cultural Heritage List. It is the city with the largest area on the Heritage List in the world.
+
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit dignissimos molestias delectus! Fugit nemo tempore amet sapiente atque. Dicta error nemo numquam, omnis repellat ratione aliquam at recusandae alias. Voluptatibus commodi odit aut placeat culpa ab exercitationem atque in blanditiis totam aliquam reprehenderit architecto neque soluta nulla rerum sequi, earum, debitis quam reiciendis quo sit nostrum. Quis laboriosam, error porro tempora eligendi officia dolorem omnis quod, animi, odio deserunt expedita quidem consectetur quia quibusdam velit minus modi. Facere perspiciatis ad sint dolorem, modi cupiditate soluta perferendis fugiat necessitatibus incidunt possimus quibusdam magnam voluptates ratione esse, quia deleniti reiciendis assumenda. ipsum dolor sit amet consectetur adipisicing elit. Sunt omnis deleniti veniam repudiandae sit libero sed quaerat accusantium voluptatibus ipsum doloribus laboriosam quia quas unde perferendis error dolores, obcaecati quasi?</p>
+  </article>
+</section>
+
+<script>
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+    </script>
+
+</body>
+</html>
+

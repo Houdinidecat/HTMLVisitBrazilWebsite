@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visit Brazil</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      h1 {
+        font-size: 40px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: rgb(27, 125, 48);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(0, 3, 8);
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: rgb(243, 244, 193);
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f6f9f6;
+        height: ;
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Visit Brazil</h1>
+
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="welcome.html">Welcome</a></li>
+          <li><a href="index.html">History of Brazil</a></li>
+          <li><a href="tour.html">Touristic places</a></li>
+          <li><a href="review.html">Let us know what you think!</a></li>
+          <li><a href="reserv.html">Make a reservation</a></li>
+          <li><a href="carnival.html">Brazil Cranival</a></li>
+        </ul>
+      </nav>
+
+      <article>
+    
+      <h1 style="text-align:center;">Let us know what you think!</h1>
+
+      <style>
+        .cb {
+           position: relative;
+           padding: 2%;
+           border-radius: 8%;
+           width:25%;
+        }
+        .cb::after {
+           content: "";
+           position: absolute;
+           height: 30px;
+           width: 30px;
+           bottom: -30px;
+           left: 80%;
+        }
+        #one {
+           box-shadow: inset 0 0 12px green;
+           left: 65%;
+        }
+        #two {
+           box-shadow: inset 0 0 12px rgb(230, 245, 89);
+           left: 4%;
+        }
+        #one::after {
+           left: 80%;
+           box-shadow: inset 0 0 12px green;
+           clip-path: polygon(0 0, 100% 0, 100% 80%);
+}
+#two::after{
+   left: 8%;
+   box-shadow: inset 0 0 12px rgb(215, 234, 107);
+   clip-path: polygon(0 0, 100% 0, 0 80%);
+}
+</style>
+</head>
+<body>
+    <img
+          src="images/153D75EE-4C1D-4540-B07E-CCD2F94A27C3.jpeg"
+          alt="beach"
+          style="width: 250px; height: 188px; float: left; margin-right: 15px;"
+        />
+
+<div class="cb" id="one">
+   "Life changing experience"
+
+   <p>Getting to live the real Brazil vibe and talk to the locals made me feel part of their community and really get a hang of what a real caipirinha should taste like! </p>
+</div>
+<br>
+<br>
+<img
+          src="images/E246603D-6895-402C-AE8E-4A040AD26463.jpeg"
+          alt="plane view"
+          style="width: 250px; height: 188px; float: right; margin-right: 15px;"
+        />
+
+<div class="cb" id="two">
+   "Crazy waves"
+
+   <p>wow those waves were gnarly man, surfs up bruh!</p>
+</div>
+
+
+
+
+       
+      </article>
+    </section>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+  </body>
+</html>

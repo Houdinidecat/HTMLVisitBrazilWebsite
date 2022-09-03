@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visit Brazil</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1 {
+  font-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(27, 125, 48);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 3, 8);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: rgb(243, 244, 193);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f6f9f6;
+  height: 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Visit Brazil</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="welcome.html">Welcome</a></li>
+      <li><a href="index.html">History of Brazil</a></li>
+      <li><a href="tour.html">Touristic places</a></li>
+      <li><a href="review.html">Let us know what you think!</a></li>
+      <li><a href="reserv.html">Make a reservation</a></li>
+      <li><a href="carnival.html">Brazil Cranival</a></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+
+    <img src="images/E99D9D67-60C3-4207-BD82-E9AA83217135.jpeg" alt="picture" style="width: 600px;px;height:400px; display: block; margin-left: auto; margin-right: auto;">
+
+    <h1>Stay with us</h1>
+    <h2>Make your reservation with time to stay in one of our luxury hotels for a great price</h2>
+    <h3>Answer the questions below to know what hotel would be best for your party</h3>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+
+
+  </article>
+</section>
+
+<script>
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+    </script>
+
+</body>
+</html>
+
